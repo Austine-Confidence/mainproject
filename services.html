@@ -42,102 +42,120 @@
             </div>
 
             <nav class="mobile-nav" aria-hidden="true">
-            <button class="close-btn" aria-label="Close menu">×</button>
-            <div class="mobile-nav-inner">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="shop.html">SHOP</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+                <button class="close-btn" aria-label="Close menu">×</button>
+                <div class="mobile-nav-inner">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
 
-                <div class="mobile-nav-cta">
-                    <button class="secondary"><a href="register1.html">Register</a></button>
+                    <div class="mobile-nav-cta">
+                        <button class="secondary"><a href="register1.html">Register</a></button>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
         </div>
 
     </header>
 
-    <section class="services">
-
-        <div class="service-hero">
-            <div class="service-txt">
-                <h1>Professional Automotive <span>Services</span></h1>
-                <p>Explore our wide range of professional automotive services tailored to meet all your vehicle needs.
-                </p>
-            </div>
+    <section class="hero">
+        <video autoplay muted loop src="./assest/video/hero-section video.mp4"></video>
+        <div class="hero-content">
+            <h1>Our Car Service</h1>
+            <p class="subtitle">Professional services for all car brands.</p>
         </div>
+    </section>
 
+    <section class="services">
+        <h2>Services We Offer</h2>
 
-        <div class="service-content">
-            <div class="content-txt">
-                <h2>Our Services</h2>
-                <p class="subtitle">From routine maintenance to custom upgrades, we've got your automotive needs
-                    covered.</p>
+        <div class="service-card">
+
+            <div class="card">
+                <img src="./assest/images/services images/Regular Maintenance.jpg" alt="maintenance">
+                <h3>Maintenance</h3>
+                <p>Regular checkups to keep your car in top sharp.</p>
+                <button onclick="openBookingForm('Maintenance')">Book Now</button>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div>
-                        <h3>Regular Maintenance</h3>
-                        <p>Keep your vehicle running smoothly with our comprehensive maintenance services including oil
-                            changes, filter replacements, and inspections.</p>
-                    </div>
-                    <img src="./assest/images/services images/car maintenance.jpg" alt="Regular Maintenance">
-                </div>
+            <div class="card">
+                <img src="./assest/images/services images/car maintenance.jpg" alt="Repair">
+                <h3>Repair</h3>
+                <p>Expert repair services for all makes and models.</p>
+                <button onclick="openBookingForm('Repair')">Book Now</button>
+            </div>
 
-                <div class="service-card2">
-                    <div>
-                        <h3>Repair Services</h3>
-                        <p>Expert diagnosis and repair of mechanical and electrical issues. Our certified technicians
-                            handle everything from minor fixes to major overhauls.</p>
-                    </div>
-                    <img src="./assest/images/services images/car maintenance.jpg" alt="Repair Services">
-                </div>
+            <div class="card">
+                <img src="./assest/images/services images/Detailing & Cleaning.jpg" alt="Car Detailing">
+                <h3>Car Detailing</h3>
+                <p>Total cleaning & polishing to make your car shine.</p>
+                <button onclick="openBookingForm('Detailing')">Book Now</button>
+            </div>
 
-                <div class="service-card">
-                    <div>
-                        <h3>Car Detailing</h3>
-                        <p>Professional interior and exterior detailing to restore your vehicle's appearance and protect
-                            its finish with premium products.</p>
-                    </div>
-                    <img src="./assest/images/services images/Detailing & Cleaning.jpg" alt="">
-                </div>
-
-                <div class="service-card4">
-                    <div>
-                        <h3>Vehicle Inspection</h3>
-                        <p>Thorough pre-purchase or periodic inspections to ensure your vehicle meets safety standards
-                            and identify potential issues early.</p>
-                    </div>
-                    <img src="./assest/images/services images/car repair.jpg" alt="Vehicle Inspection">
-                </div>
-
-                <div class="service-card">
-                    <div>
-                        <h3>Diagnostic Services</h3>
-                        <p>Advanced computer diagnostics to quickly identify issues and provide accurate solutions with
-                            transparent reporting.</p>
-                    </div>
-                    <img src="./assest/images/services images/Diagnostics.jpg" alt="Diagnostic Services">
-                </div>
-
-                <div class="service-card-video">
-                    <div>
-                        <h3>Custom Upgrades</h3>
-                        <p>Enhance your vehicle with performance upgrades, aesthetic modifications, and technology
-                            installations tailored to your preferences.</p>
-                    </div>
-                    <video loop autoplay muted src="./assest/images/services images/Custom Upgrades.mp4"></video>
-                </div>
-
+            <div class="card">
+                <img src="./assest/images/services images/car maintenance.jpg" alt="Financing">
+                <h3>Financing</h3>
+                <p>We enable flexible Car financing </p>
+                <button onclick="openBookingForm('Financing')">Book Now</button>
             </div>
         </div>
     </section>
+
+    <section class="brands">
+        <h2>We Service These Brands</h2>
+
+        <div class="brands-logos">
+            <img src="./assest/images/brand logo/MERCEDES BENZ.jpg" alt="mercedes">
+            <img src="./assest/images/brand logo/bnw.jpg" alt="bwn">
+            <img src="./assest/images/brand logo/Tesla.jpg" alt="">
+            <img src="./assest/images/brand logo/toyota.jpg" alt="">
+            <img src="./assest/images/brand logo/Audi.jpg" alt="audi">
+            <img src="./assest/images/brand logo/Honda.jpg" alt="honda">
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeBookingForm()">&times;</span>
+            
+            <h2 id="serviceTitle">Book Service</h2>
+
+            <form id="bookingForm" onsubmit="submitBooking(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label id="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label id="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+
+                <label id="car">Car Brands</label>
+                <select name="car" id="car" required>
+                    <option value="">Select Brands</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW">BMW</option>
+                    <option value="toyota">Toyata</option>
+                    <option value="honda">Honda</option>
+                    <option value="audi">Audi</option>
+                    <option value="tesla">Tesla</option>
+                </select>
+
+                <label for="Message">Message</label>
+                <textarea name="message" id="message" placeholder="Any special request..." rows="5"></textarea>
+
+                <button type="submit">Submit</button>
+                <!-- <p>&copy; 2026 car services. All Rights Reserved</p> -->
+
+            </form>
+        </div>
+    </div>
 
 
 
@@ -217,5 +235,5 @@
 
     <script src="./script/script.js"></script>
 </body>
+
 </html>
-    

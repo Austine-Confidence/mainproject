@@ -177,7 +177,6 @@
 
 .hero-content-button {
   display: flex;
-  gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -187,6 +186,7 @@
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 5px;
+  margin: 0.5rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -433,140 +433,6 @@
   color: #fff;
   border: #e55a2b;
 }
-
-
-
-/************************************** gallery ***********************************/
-
-.varieties {
-  padding: 4rem 1.6rem;
-  background: #f9f9f9;
-  color: #111;
-}
-
-.varieties .varieties-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.varieties .varieties-container h2 {
-  color: #e55a2b;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 0.7rem;
-}
-
-.varieties .varieties-container .subtitle {
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #555;
-}
-
-.grid {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  margin: 3rem 3.5rem 1rem 3.5rem;
-  /* animation: fadeup 5s linear;
-  animation-timeline: View();
-  animation-range: entry 0% cover 40%; */
-}
-
-/* @keyframes fadeup {
-  from {
-    opacity: 0;
-    transform: scale(0.4);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-} */
-
-.card {
-  height: 23rem;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-.card img {
-  width: 100%;
-  height: 10rem;
-  object-fit: cover;
-}
-
-.card div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 0.5rem;
-  margin: 1rem 0.5rem 0.8;
-}
-
-.card .price {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #ff6b35;
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0 0.1rem 0;
-  color: #ff6b35;
-}
-
-.card p {
-  font-size: 0.99rem;
-  color: #666;
-  margin: 1rem 1rem 0 1rem;
-  line-height: 1.3rem;
-}
-
-.card button {
-  padding: 0.3rem 0.8rem;
-  margin: 1rem 0 1.5rem 0;
-  border: none;
-  border-radius: 5px;
-  background-color: #ff6b35;
-}
-
-.card a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.varieties-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  padding: 12px 28px;
-  color: #e55a2b;
-  background-color: #fff;
-  border: 2px #e55a2b solid;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.varieties-btn:hover {
-  background-color: #e55a2b;
-  color: #fff;
-}
-
 
 
 .testimonials {
@@ -865,16 +731,17 @@
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .hero-content p {
     font-size: 0.8rem;
     max-width: 400px;
+    margin-bottom: 0.5rem;
   }
 
   .hero-content button {
-    margin: 0 0.4rem;
-    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    padding: 0.5rem 0.8rem;
     font-size: 1rem;
   }
 
