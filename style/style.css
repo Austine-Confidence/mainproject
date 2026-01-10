@@ -456,7 +456,7 @@
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  height: 60vh;
+  height: 65vh;
   transition: transform 0.3s;
   opacity: 0;
   transform: translateY(80px);
@@ -504,14 +504,14 @@
 
 .card h3 {
   color: #e55a2b;
-  margin: 1rem;
+  margin: 0.7rem;
   font-size: 1.4rem;
 }
 
 .card p {
   color: #ccc;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .card-button {
