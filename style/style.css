@@ -435,6 +435,77 @@
 }
 
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #fff;
+  color: #000;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.card {
+  /* background: #0c0c0c; */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  height: 60vh;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #e55a2b;
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+.card .price {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  background-color: #ff6b35;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #e55a2b;
+}
+
+.cart {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+
+
 .testimonials {
   background-color: #f9f9f9;
   color: #111;
@@ -758,27 +829,53 @@
     margin-bottom: 1rem;
   }
 
-
-  .varieties {
-    margin-top: 0.5rem;
-  }
-  .varieties .varieties-container h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 20px;
   }
 
-  .varieties .varieties-container .subtitle {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+  .card-info {
+    font-size: 14px;
   }
 
-  .grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    gap: 2rem;
-    margin: 3rem 3.5rem 1rem 3.5rem;
+  .shop {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .card-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+
+  .cart {
+    padding: 20px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .cart-item button {
+    width: 100%;
   }
 
   .testimonials {
