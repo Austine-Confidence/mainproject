@@ -36,10 +36,17 @@
                 </ul>
             </div>
 
+            <div class="nav-cart" onclick="toggleCart()">
+                <img src="./assest/icon/shopping-cart.png" class="cart-icon" alt="icon">
+
+                <span id="cartCount">0</span>
+            </div>
+
             <div class="nav-btn">
-                <button><a href="register1.html">Register</a></button>
+                <button><a href="login.html">Register</a></button>
                 <!-- <button><a href="login.html">Login</a></button> -->
             </div>
+
 
             <nav class="mobile-nav" aria-hidden="true">
             <button class="close-btn" aria-label="Close menu">×</button>
@@ -51,9 +58,11 @@
                     <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
+                
 
                 <div class="mobile-nav-cta">
-                    <button class="secondary"><a href="register1.html">Register</a></button>
+                    <button class="secondary"><a href="login.html">Register</a></button>
+
                 </div>
             </div>
         </nav>
@@ -73,251 +82,97 @@
         </div>
     </section>
 
-    <section class="header">
-        <h1>Luxury Car Shop</h1>
+    <!-- shop -->
 
-        <div class="cart-info">
-            <span id="count">0</span> | Total: $<span id="total">0</span>
+    <div class="container">
+
+        <div class="shop" id="shop">
+
+            <div class="card">
+                <img src="./assest/images/benz/benz3.jpg" alt="benz">
+                <div class="info">
+                    <h3>Mercedes Benz C300</h3>
+                    <p class="price">$32,000</p>
+                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/bmw/bmw2.jpg" alt="benz">
+                <div class="info">
+                    <h3>BNW X5</h3>
+                    <p class="price">$45,000</p>
+                    <button id="btn" onclick="addToCart('BNW X5')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/audi/audi1.jpg" alt="Audi A6">
+                <div class="info">
+                    <h3>Audi A6</h3>
+                    <p class="price">$38,000</p>
+                    <button id="btn" onclick="addToCart('Audi A6')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/toyata/Toyota Corolla 2025.jpg" alt="Toyata Camry">
+                <div class="info">
+                    <h3>Toyata Camry</h3>
+                    <p class="price">$28,000</p>
+                    <button id="btn" onclick="addToCart('Toyata Camry')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/benz/benz3.jpg" alt="benz">
+                <div class="info">
+                    <h3>Mercedes Benz C300</h3>
+                    <p class="price">$32,000</p>
+                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/benz/benz3.jpg" alt="benz">
+                <div class="info">
+                    <h3>Mercedes Benz C300</h3>
+                    <p class="price">$32,000</p>
+                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/benz/benz3.jpg" alt="benz">
+                <div class="info">
+                    <h3>Mercedes Benz C300</h3>
+                    <p class="price">$32,000</p>
+                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/benz/benz3.jpg" alt="benz">
+                <div class="info">
+                    <h3>Mercedes Benz C300</h3>
+                    <p class="price">$32,000</p>
+                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
+                </div>
+            </div>
+
+            
+
         </div>
-    </section>
+    </div>
 
-    <section class="shop">
+    <div class="cart-panel" id="cartPanel">
+        <h3>Your Cart</h3>
+        <div class="cart-items" id="cartItems"></div>
+        <p class="total">Total: $<span id="total">0</span></p>
 
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p class="price">$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p class="price">$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p class="price">$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/benz/benz1.png" alt="benz">
-            <h3>Mercedes Benz</h3>
-            <p>$50,000</p>
-            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p class="price">$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
-            <h3>BNW X5</h3>
-            <p>$45,000</p>
-            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="./assest/images/audi/audi1.jpg" alt="audi">
-            <h3>Audi RS7</h3>
-            <p>$60,000</p>
-            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
-        </div>
-
-        
-
-        <!-- <a href="shop.html">See More</a> -->
-    </section>
-
-    <section class="cart">
-        <h2>Your Cart</h2>
-
-        <div id="cartItems"></div>
-    </section>
-
+        <button onclick="toggleCart()">Close</button>
+    </div>
+    
 
 
 
@@ -390,6 +245,6 @@
 
 
 
-    <script src="./script/script.js"></script>
+    <script src="./script/shop.js"></script>
 </body>
 </html>

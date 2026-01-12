@@ -63,37 +63,26 @@
     </header>
 
     <div class="container">
+        <div class="form-box">
+            <h2 id="title">Login</h2>
 
-        <div class="glass-box">
-            
-            <h2 id="formtitle">Login</h2>
+            <form id="form">
+                <input type="text" id="name" placeholder="Full Name" required>
 
-            <form id="loginform">
-                <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
 
-                    <input type="text" id="username" required>
-                    <label>Username</label>
-                </div>
+                <input type="password" id="password" placeholder="Password" required>
 
-                <div class="input-group">
-                    <input type="password" id="password" required>
-                    <label>Password</label>
-                </div>
+                <p id="message"></p>
 
-                <div class="input-group">
-                    <input type="email" id="email" required>
-                    <label>Email</label>
-                </div>
-
-                <button type="submit">Login</button>
-
-                <p class="switch">Don't have an accout 
-                    <span onclick="toggleForm">Sign Up</span></p>
-
+                <button type="submit" id="btn">Login</button>
             </form>
+
+            <p class="toggle">
+                <span id="toggleText">Don't have an accout? Sign Up</span>
+            </p>
         </div>
     </div>
-
 
 
 

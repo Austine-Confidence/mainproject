@@ -96,7 +96,6 @@ function addToCart(price) {
   document.getElementById("count").innerText = count;
   document.getElementById("total").innerText = total;
 
-
   const item = document.createElement("div");
   item.className = "cart-item";
   item.innerHTML = `Car Added -  $${price} <button onclick="removeFromCart(this, ${price})">Remove</button>`;
@@ -113,3 +112,84 @@ function removeFromCart(button, price) {
 
   button.parentElement.remove();
 }
+
+
+
+
+
+
+let isSignup = true;
+
+const title = document.getElementById("title");
+const nameField = document.getElementById("name");
+const form = document.getElementById("form");
+const message = document.getElementById("message");
+const ToggleText = document.getElementById("toggleText");
+
+title.innerText = "Sign Up";
+nameField.style.display = "block";
+document.getElementById("btn").innerText = "Create Account";
+toggleText.innerText = "Already have an account? Login"
+
+toggleText.addEventListener("click", toggleForm);
+
+function toggleForm() {
+  isSignup = !isSignup;
+
+  if (isSignup) {
+    title.innerText = "Sign Up";
+    nameField.style.display = "block";
+
+    document.getElementById("btn").innerText = "Create Account";
+    toggleText.innerText = "Already have an account? Login";
+  } else {
+    title.innerText = "Login";
+    nameField.style.display = "none";
+
+    document.getElementById("btn").innerText = "Login";
+    toggleText.innerText = "Don't have an account? Sign UP";
+  }
+  message.innerText = "";
+}
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+
+  if (isSignup) {
+    let exists = users.find((u) => u.email === email);
+
+    if (exists) {
+      message.style.color = "red";
+      message.innerText = "Account already exists";
+
+      return;
+    }
+
+    users.push({ name, email, password });
+    localStorage.setItem("users", JSON.stringify(users));
+
+    message.style.color = "lightgreen";
+    message.innerText = "Account created successfully!";
+
+    toggleForm();
+  } else {
+    let user = users.find((u) => u.email === email && u.password === password);
+
+    if (user) {
+      alert("Welcome " + user.name);
+    } else {
+      message.style.color = "red";
+      message.innerText = "Invalid login details";
+    }
+  }
+});
+
+
+
+
