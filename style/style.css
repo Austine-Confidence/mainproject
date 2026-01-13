@@ -456,7 +456,7 @@
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  height: 65vh;
+  height: 59vh;
   transition: transform 0.3s;
   opacity: 0;
   transform: translateY(80px);
@@ -469,7 +469,7 @@
   @keyframes scroll {
     from {
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(200px);
     }
 
     to {

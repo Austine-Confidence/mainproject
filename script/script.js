@@ -39,10 +39,17 @@
     });
 })();
 
+
+
+    //                                              
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   alert("Thank you! Your message has been sent");
 });
+
+
+
+//                                   service
 
 const modal = document.getElementById("bookingModal");
 
@@ -84,35 +91,38 @@ function submitBooking(event) {
   closeBookingForm();
 }
 
-let count = 0;
-let total = 0;
 
-const cartItems = document.getElementById("cartItems");
 
-function addToCart(price) {
-  count++;
-  total += price;
 
-  document.getElementById("count").innerText = count;
-  document.getElementById("total").innerText = total;
 
-  const item = document.createElement("div");
-  item.className = "cart-item";
-  item.innerHTML = `Car Added -  $${price} <button onclick="removeFromCart(this, ${price})">Remove</button>`;
 
-  cartItems.appendChild(item);
-}
+//                         add to cart hero                 
 
-function removeFromCart(button, price) {
-  count--;
-  total -= price;
+// let cartCount = 0;
+// let cartTotal = 0;
 
-  document.getElementById("count").innerText = count;
-  document.getElementById("total").innerText = total;
+// function addToCart(price) {
+//   cartCount++;
+//   cartTotal += price;
 
-  button.parentElement.remove();
-}
+//   document.getElementById("cart-count").innerText = cartCount;
+//   document.getElementById("items").innerText = cartCount;
+//   document.getElementById("total").innerText = cartTotal;
+// }
 
+// function removeFromCart() {
+//   if (cartCount > 0) {
+//     cartCount--;
+//     cartTotal = 0;
+
+//     const avg = cartCount / (cartCount + 1);
+//     cartTotal = avg * cartCount;
+
+//     document.getElementById("cart-count").innerText = cartCount;
+//     document.getElementById("items").innerText = cartCount;
+//     document.getElementById("total").innerText = cartTotal;
+//   }
+// }
 
 
 
@@ -189,7 +199,3 @@ form.addEventListener("submit", function (e) {
     }
   }
 });
-
-
-
-

@@ -531,10 +531,12 @@ form button {
 
   .card {
     width: 100%;
+    height: 46vh;
   }
 
   .brand-logos {
     flex-direction: column;
+    
     gap: 15px;
   } 
 

@@ -282,7 +282,7 @@ body {
 
 .contact-container {
     display: flex;
-    padding: 3rem;
+    padding: 4rem 4rem;
     gap: 2rem;
 } 
 

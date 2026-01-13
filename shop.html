@@ -8,7 +8,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/shop.css">
-    <title>Daniel AutoHub Home</title>
+    <title>Shop | danielautohub</title>
 </head>
 
 <body>
@@ -36,11 +36,11 @@
                 </ul>
             </div>
 
-            <div class="nav-cart" onclick="toggleCart()">
+            <!-- <div class="nav-cart" onclick="toggleCart()">
                 <img src="./assest/icon/shopping-cart.png" class="cart-icon" alt="icon">
 
                 <span id="cartCount">0</span>
-            </div>
+            </div> -->
 
             <div class="nav-btn">
                 <button><a href="login.html">Register</a></button>
@@ -59,11 +59,10 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
                 
-
                 <div class="mobile-nav-cta">
                     <button class="secondary"><a href="login.html">Register</a></button>
-
                 </div>
+
             </div>
         </nav>
 
@@ -82,97 +81,307 @@
         </div>
     </section>
 
-    <!-- shop -->
-
-    <div class="container">
-
-        <div class="shop" id="shop">
-
-            <div class="card">
-                <img src="./assest/images/benz/benz3.jpg" alt="benz">
-                <div class="info">
-                    <h3>Mercedes Benz C300</h3>
-                    <p class="price">$32,000</p>
-                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
-                </div>
+    <section class="brand">
+        <h2>Mercedes Benz</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/benz/benz2.png" alt="">
+                <h3>Mercedes benz GLE</h3>
+                <p>$42,000</p>
+                <button class="card-btn">Buy Now</button>
             </div>
 
-            <div class="card">
-                <img src="./assest/images/bmw/bmw2.jpg" alt="benz">
-                <div class="info">
-                    <h3>BNW X5</h3>
-                    <p class="price">$45,000</p>
-                    <button id="btn" onclick="addToCart('BNW X5')">Add to Cart</button>
-                </div>
+            <div class="car-card">
+                <img src="./assest/images/benz/Mercedes Benz E53 AMG W213.png" alt="">
+                <h3>Mercedes benz C300</h3>
+                <p>$58,000</p>
+                <button class="card-btn">Buy Now</button>
             </div>
 
-            <div class="card">
-                <img src="./assest/images/audi/audi1.jpg" alt="Audi A6">
-                <div class="info">
-                    <h3>Audi A6</h3>
-                    <p class="price">$38,000</p>
-                    <button id="btn" onclick="addToCart('Audi A6')">Add to Cart</button>
-                </div>
+            <div class="car-card">
+                <img src="./assest/images/benz/Mercedes Benz AMG g63.png" alt="">
+                <h3>Mercedes benz G-Wagon</h3>
+                <p>$42,000</p>
+                <button class="card-btn">Buy Now</button>
             </div>
 
-            <div class="card">
-                <img src="./assest/images/toyata/Toyota Corolla 2025.jpg" alt="Toyata Camry">
-                <div class="info">
-                    <h3>Toyata Camry</h3>
-                    <p class="price">$28,000</p>
-                    <button id="btn" onclick="addToCart('Toyata Camry')">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./assest/images/benz/benz3.jpg" alt="benz">
-                <div class="info">
-                    <h3>Mercedes Benz C300</h3>
-                    <p class="price">$32,000</p>
-                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./assest/images/benz/benz3.jpg" alt="benz">
-                <div class="info">
-                    <h3>Mercedes Benz C300</h3>
-                    <p class="price">$32,000</p>
-                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./assest/images/benz/benz3.jpg" alt="benz">
-                <div class="info">
-                    <h3>Mercedes Benz C300</h3>
-                    <p class="price">$32,000</p>
-                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./assest/images/benz/benz3.jpg" alt="benz">
-                <div class="info">
-                    <h3>Mercedes Benz C300</h3>
-                    <p class="price">$32,000</p>
-                    <button id="btn" onclick="addToCart('Mercedes Benz C300')">Add to Cart</button>
-                </div>
-            </div>
-
-            
-
+            <div class="car-card">
+                <img src="./assest/images/benz/Glc 250.png" alt="">
+                <h3>Mercedes benz GLC</h3>
+                <p>$52,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
         </div>
-    </div>
+    </section>
 
-    <div class="cart-panel" id="cartPanel">
-        <h3>Your Cart</h3>
-        <div class="cart-items" id="cartItems"></div>
-        <p class="total">Total: $<span id="total">0</span></p>
+    <section class="brand">
+        <h2>BMW Series</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw2.jpg" alt="">
+                <h3>BMW X5</h3>
+                <p>$60,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
 
-        <button onclick="toggleCart()">Close</button>
-    </div>
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw3.jpg" alt="">
+                <h3>BMW M4</h3>
+                <p>$75,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw4.jpg" alt="">
+                <h3>BMW i8</h3>
+                <p>$140,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw7.jpg" alt="">
+                <h3>BMW M5</h3>
+                <p>$52,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="brand">
+        <h2>Telsa Model</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw2.jpg" alt="">
+                <h3>Telsa Model S</h3>
+                <p>$90,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw3.jpg" alt="">
+                <h3>Telsa Model X</h3>
+                <p>$105,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw4.jpg" alt="">
+                <h3>Telsa Model 3</h3>
+                <p>$140,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw7.jpg" alt="">
+                <h3>Telsa Model 2</h3>
+                <p>$52,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="brand">
+        <h2>Audi</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/audi/audi1.jpg" alt="">
+                <h3>Audi A6</h3>
+                <p>$55,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/audi/audi2.jpg" alt="">
+                <h3>Audi Q7</h3>
+                <p>$70,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/audi/audi5.jpg" alt="">
+                <h3>Audi R8</h3>
+                <p>$160,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/audi/audi4.jpg" alt="">
+                <h3>Audi R6</h3>
+                <p>$52,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="brand">
+        <h2>Lamborghini Series</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw2.jpg" alt="">
+                <h3>Aventador</h3>
+                <p>$390,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw3.jpg" alt="">
+                <h3>Huracan</h3>
+                <p>$260,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw4.jpg" alt="">
+                <h3>Urus</h3>
+                <p>$140,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/bmw/bmw7.jpg" alt="">
+                <h3>Revuelto</h3>
+                <p>$120,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="brand">
+        <h2>Toyata </h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/toyata/Toyota Corolla 2025.jpg" alt="">
+                <h3>Toyata Camry</h3>
+                <p>$32,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/toyata/land cruiser.jpg" alt="">
+                <h3>Land Cruiser</h3>
+                <p>$85,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/toyata/camry2.jpg" alt="">
+                <h3>Toyata Corolla</h3>
+                <p>$28,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/toyata/Toyota SW4 SRX Platinum 2025.jpg" alt="">
+                <h3>Toyata Venza</h3>
+                <p>$120,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
     
+    <section class="brand">
+        <h2>Lexus </h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/lexus/Bagged IS350.jpg" alt="">
+                <h3>Lexus ES350</h3>
+                <p>$32,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/lexus/lexus.jpg" alt="">
+                <h3>Lexus NX</h3>
+                <p>$85,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/lexus/New 2022 Lexus IS 350 F Sport.jpg" alt="">
+                <h3>Lexus LX</h3>
+                <p>$28,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/lexus/car3.jpg" alt="">
+                <h3>Lexus RX</h3>
+                <p>$120,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="brand">
+        <h2>Range Rover</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/audi/audi1.jpg" alt="">
+                <h3>Velar</h3>
+                <p>$90,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/audi/audi2.jpg" alt="">
+                <h3>Sport</h3>
+                <p>$110,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/audi/audi5.jpg" alt="">
+                <h3>Defender</h3>
+                <p>$95,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/audi/audi4.jpg" alt="">
+                <h3>Evoque</h3>
+                <p>$52,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="brand">
+        <h2>Ferarri Ferarri</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./assest/images/benz/benz2.png" alt="">
+                <h3>Ferarri Roma</h3>
+                <p>$242,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/benz/Mercedes Benz E53 AMG W213.png" alt="">
+                <h3>Ferarri SF90</h3>
+                <p>$230,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/benz/Mercedes Benz AMG g63.png" alt="">
+                <h3>Ferarri 488 GTB</h3>
+                <p>$42,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>
+
+            <div class="car-card">
+                <img src="./assest/images/benz/Glc 250.png" alt="">
+                <h3>Ferarri Portofino</h3>
+                <p>$200,000</p>
+                <button class="card-btn">Buy Now</button>
+            </div>  
+        </div>
+    </section>
+    
+    
+
+
+
 
 
 
